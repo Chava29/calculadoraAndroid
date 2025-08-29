@@ -44,11 +44,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         objetito.setDatito1(Integer.parseInt(textito1.getText().toString()));
         objetito.setDatito2(Integer.parseInt(textito2.getText().toString()));
         if(cadenita.equals("+"))
-            Toast.makeText(this, "la suma es: " + objetito.sumita(),
-                    Toast.LENGTH_SHORT).show();
-        else
+            Toast.makeText(this, "la suma es: " + objetito.sumita(), Toast.LENGTH_SHORT).show();
+        if(cadenita.equals("-"))
             Toast.makeText(this, "la resta es: " + objetito.restita(),
                     Toast.LENGTH_SHORT).show();
+        if(cadenita.equals("*"))
+            Toast.makeText(this, "la multi es: " + objetito.multiplicadita(), Toast.LENGTH_SHORT).show();
+        if(cadenita.equals("/"))
+            Toast.makeText(this, "La division es: " + objetito.divisioncita(), Toast.LENGTH_SHORT).show();
 
     }
 }
